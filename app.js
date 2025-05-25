@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: https://api.azcs.site,
+    origin: https://notes.azcs.site,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],  
     credentials: true,
