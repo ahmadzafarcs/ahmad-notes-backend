@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: https://api.azcs.site,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],  
     credentials: true,
