@@ -18,4 +18,8 @@ import noteRoutes from './routes/notes.route.js';
 app.use('/api', authRoutes);
 app.use('/api', noteRoutes);
 
+app.get('/api/test', (req, res) => {
+    res.status(200).json({ success: true, message: 'API is working' });
+});
+
 export default app;
