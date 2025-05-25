@@ -18,7 +18,7 @@ import noteRoutes from './routes/notes.route.js';
 app.use('/', authRoutes);
 app.use('/', noteRoutes);
 
-app.get('/api/test', (req, res) => {
+app.get('/test', (req, res) => {
     res.status(200).json({ success: true, message: 'API is working' });
 });
 
